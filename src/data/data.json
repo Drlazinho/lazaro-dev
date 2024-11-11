@@ -1,0 +1,12 @@
+{
+    "projects": [
+        {
+            "title": "Edumeta Web",
+            "description": "A website that provides an idea of ​​how 'Technology can help in education'. This project was developed and used to compete for a grant to access a platform for teaching technology and development courses in 2021.",
+            "images": ["/assets/imgs/edumeta1.webp", "/assets/imgs/edumeta2.webp"],
+            "developed": ["javascript", "html5", "sass", "swiper", "seo", "css"],
+            "readme": "https://github.com/Drlazinho/eduMeta",
+            "app": "https://edumeta.netlify.app/"
+        }
+    ]
+}
