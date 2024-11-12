@@ -13,8 +13,8 @@ interface CardProps {
   description: string;
   images: string[];
   developed: string[];
-  readme: string;
-  app: string;
+  readme: string | boolean;
+  app: string | boolean | undefined;
 }
 
 function Card({
@@ -78,7 +78,7 @@ function Card({
       </div>
 
       {/* Descrição e Badges */}
-      <div className="p-4">
+      <div className="p-4 min-h-[200px]">
         <h2 className="text-lg font-semibold text-gray-800">{title}</h2>
         <p className="text-gray-600 text-sm mt-1">{description}</p>
 
@@ -129,8 +129,9 @@ function Card({
 
           <DialogTrigger asChild>
             <button
-              className="bg-gray-600 text-white text-sm font-medium px-4 py-2 rounded hover:bg-gray-700"
+              className="bg-gray-600 text-white text-sm font-medium px-4 py-2 rounded hover:bg-gray-700 disabled:text-gray-400 disabled:cursor-not-allowed"
               onClick={() => openModal(app)}
+              disabled={!app}
             >
               Aplicação
             </button>

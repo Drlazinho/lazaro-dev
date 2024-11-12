@@ -4,9 +4,60 @@
             "title": "Edumeta Web",
             "description": "A website that provides an idea of ​​how 'Technology can help in education'. This project was developed and used to compete for a grant to access a platform for teaching technology and development courses in 2021.",
             "images": ["/assets/imgs/edumeta1.webp", "/assets/imgs/edumeta2.webp"],
-            "developed": ["javascript", "html5", "sass", "swiper", "seo", "css"],
+            "developed": ["javascript", "html5", "sass", "swiper", "seo", "css3", "responsive"],
             "readme": "https://github.com/Drlazinho/eduMeta",
             "app": "https://edumeta.netlify.app/"
+        },
+        {
+            "title": "Beatsalon Web",
+            "description": "A landpage type website offering beauty salon services. Developed under a mobile first concept.",
+            "images": ["/assets/imgs/beautysalon1.webp", "/assets/imgs/beautysalon2.webp"],
+            "developed": ["javascript", "html5", "swiper", "css3", "responsive"],
+            "readme": "https://github.com/Drlazinho/Site-Salao-de-Beleza",
+            "app": "https://drlazinho-beatysalon.netlify.app/"
+        },
+        {
+            "title": "ArqMovi Web",
+            "description": "A landpage type website about planned real estate.",
+            "images": ["/assets/imgs/arqmovi1.webp", "/assets/imgs/arqmovi2.webp"],
+            "developed": ["javascript", "html5", "bootstrap", "css3", "responsive"],
+            "readme": "https://github.com/Drlazinho/Site-de-Imoveis",
+            "app": "https://dazzling-liskov-a5336a.netlify.app/"
+        },
+        {
+            "title": "Gallery Photo",
+            "description": "A CRUD application, photo gallery, using firebase.",
+            "images": ["/assets/imgs/gallery.webp"],
+            "developed": ["reactjs", "firebase","typescript", "javascript", "html5", "styled-component", "responsive"],
+            "readme": "https://github.com/Drlazinho/gallery",
+            "app": false
+        },
+        {
+            "title": "Nakonta",
+            "description": "A frontend for the Nakonta website. Freelance work.",
+            "images": ["/assets/imgs/nakonta1.webp"],
+            "developed": ["javascript", "html5", "css3", "responsive"],
+            "readme": "https://github.com/Drlazinho/site-nakonta?tab=readme-ov-file",
+            "app": "https://site-nakonta.vercel.app/"
+        },
+        {
+            "title": "Template HTML for Email - Filantropia",
+            "description": "An email template for Philanthropy developed using the MJML framework",
+            "images": ["/assets/imgs/filantropia.webp"],
+            "developed": ["javascript", "html5", "css3", "responsive"],
+            "readme": "https://github.com/Drlazinho/mjml-newsletter-filantropo?tab=readme-ov-file",
+            "app": false
+        },
+        {
+            "title": "Lausan Consultaria - Web",
+            "description": "A single page application (SPA) developed in React for Lausan Consultoria",
+            "images": ["/assets/imgs/lausan1.webp","/assets/imgs/lausan2.webp"],
+            "developed": ["reactjs", "javascript", "styled-component", "html5", "css3", "responsive"],
+            "readme": "https://github.com/Drlazinho/lausan-consultorias",
+            "app": "https://lausan-consultorias.vercel.app/"
+        },
+        {
+
         }
     ]
 }
