@@ -4,7 +4,6 @@ import angular from "./assets/icons/angular.svg";
 import bootstrap from "./assets/icons/bootstrap.svg";
 import css3 from "./assets/icons/css3.svg";
 import cypress from "./assets/icons/cypress.svg";
-import docker from "./assets/icons/docker.svg";
 import figma from "./assets/icons/figma.svg";
 import git from "./assets/icons/git.svg";
 import javascript from "./assets/icons/javascript.svg";
@@ -27,21 +26,11 @@ import typescript from "./assets/icons/typescript.svg";
 import vite from "./assets/icons/vite.svg";
 import vitest from "./assets/icons/vitest.svg";
 import webpack from "./assets/icons/webpack.svg";
-import mjml from "./assets/icons/mjml.png";
-
-import amvox from "./assets/imgs/amvox.png";
-import amvoxbg from "./assets/imgs/logo_amvox.png";
-import knots from "./assets/imgs/knots.svg";
-import gol from "./assets/imgs/gol.svg";
-import ffx from "./assets/imgs/ffx.png";
-import filantropica from "./assets/imgs/filantropia.png";
-import boldman from "./assets/imgs/boldman.svg";
 import { Button } from "./components/ui/button";
 import { Plus } from "lucide-react";
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -49,7 +38,7 @@ import {
 import { Experience } from "./components/partials/experience";
 import Card from "./components/partials/cards";
 
-import data from "./data/data.json"
+import data from "./data/data.json";
 
 function App() {
   return (
@@ -469,44 +458,35 @@ function App() {
           </DialogContent>
         </Dialog>
       </section>
-      <section className="bg-slate-200"
-      >
-        <div      className="container min-h-screen m-auto py-[5rem] px-4 flex flex-col items-center "
-        id="projects">
+      <section className="bg-slate-200">
+        <div
+          className="container min-h-screen m-auto py-[5rem] px-4 flex flex-col items-center "
+          id="projects"
+        >
           <h2>Projetos</h2>
-          
 
           <div className="w-full grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {
-                data.projects.map((i, key) => (
+            {data.projects.map((i, key) => (
+              <Card
+                title={i.title}
+                description={i.description}
+                images={i.images}
+                developed={i.developed}
+                readme={i.readme}
+                app={i.app}
+                key={key}
+              />
+            ))}
 
-                  
-                  
-                  <Card
-                  title={i.title}
-                  description={i.description}
-                  images={i.images}
-                  developed={i.developed}
-                  readme={i.readme}
-                  app={i.app}
-                  key={key}
-                  
-                  />
-                )
-                )
-              }
-
- 
-  {/* <Card
+            {/* <Card
     images={[
       'https://via.placeholder.com/320x192',
       'https://via.placeholder.com/320x192?text=Imagem+4',
       'https://via.placeholder.com/320x192?text=Imagem+5',
     ]}
   /> */}
-</div>
+          </div>
         </div>
-
       </section>
     </div>
   );

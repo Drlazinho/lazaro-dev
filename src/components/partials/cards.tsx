@@ -1,4 +1,3 @@
-import { X } from "lucide-react";
 import { useState, useEffect } from "react";
 import {
   Dialog,
@@ -9,12 +8,12 @@ import {
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 
 interface CardProps {
-  title: string;
-  description: string;
-  images: string[];
-  developed: string[];
-  readme: string | boolean;
-  app: string | boolean | undefined;
+  title: string | undefined;
+  description: string | undefined;
+  images: string[] | undefined;
+  developed: string[] | undefined;
+  readme: string | undefined;
+  app: string | undefined;
 }
 
 function Card({
@@ -28,11 +27,11 @@ function Card({
   const [carouselIndex, setCarouselIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [iframeSrc, setIframeSrc] = useState("");
+  const [iframeSrc, setIframeSrc] = useState<string | undefined >("");
   const [isIframeLoading, setIsIframeLoading] = useState(true);
 
   useEffect(() => {
-    let interval;
+    let interval : any;
     if (isHovered) {
       interval = setInterval(() => {
         setCarouselIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -44,7 +43,7 @@ function Card({
   const handleMouseEnter = () => setIsHovered(true);
   const handleMouseLeave = () => setIsHovered(false);
 
-  const openModal = (link) => {
+  const openModal = (link : string | undefined ) => {
     setIframeSrc(link); // Define a URL para o iframe
     setIsIframeLoading(true); // Ativa o loader
     setIsModalOpen(true); // Abre o modal
@@ -52,7 +51,7 @@ function Card({
 
   return (
     <div
-      className="w-full bg-white rounded-lg shadow-md overflow-hidden group hover:scale-105 hover: transition-all"
+      className="w-full bg-white rounded-lg shadow-md overflow-hidden group border-zinc-300 border-2 hover:scale-105 hover: transition-all"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >

@@ -30,7 +30,7 @@
             "images": ["/assets/imgs/gallery.webp"],
             "developed": ["reactjs", "firebase","typescript", "javascript", "html5", "styled-component", "responsive"],
             "readme": "https://github.com/Drlazinho/gallery",
-            "app": false
+            "app": ""
         },
         {
             "title": "Nakonta",
@@ -46,7 +46,7 @@
             "images": ["/assets/imgs/filantropia.webp"],
             "developed": ["javascript", "html5", "css3", "responsive"],
             "readme": "https://github.com/Drlazinho/mjml-newsletter-filantropo?tab=readme-ov-file",
-            "app": false
+            "app": ""
         },
         {
             "title": "Lausan Consultaria - Web",
@@ -57,7 +57,44 @@
             "app": "https://lausan-consultorias.vercel.app/"
         },
         {
-
+            "title": "Arcade Calculator",
+            "description": "Calculator developed with an arcade theme from the League of Legends universe, has accessibility and various features, as well as visual and sound effects",
+            "images": ["/assets/imgs/calculator1.webp","/assets/imgs/calculator2.webp"],
+            "developed": ["javascript", "sass", "html5", "css3", "responsive"],
+            "readme": "https://github.com/Drlazinho/Calculadora-GamaAcademy",
+            "app": "https://calculadora-gama-academy-evnhy6tvy-drlazinho.vercel.app/"
+        },
+        {
+            "title": "How2Sec - Web",
+            "description": "A single page application (SPA) developed in React for How2Sec",
+            "images": ["/assets/imgs/how2sec1.webp","/assets/imgs/how2sec2.webp"],
+            "developed": ["reactjs", "javascript", "styled-component", "html5", "css3", "responsive"],
+            "readme": "https://github.com/Drlazinho/site-institucional",
+            "app": "https://site-institucional-psi.vercel.app/"
+        },
+        {
+            "title": "Cripto Nft - Web",
+            "description": "This is a full stack project to build a Dapp.",
+            "images": ["/assets/imgs/criptonft.webp"],
+            "developed": ["nextjs", "reactstrap", "bootstrap", "solidtiy", "hardhat", "html5", "css3", "responsive"],
+            "readme": "https://github.com/Drlazinho/cripto-space-front",
+            "app": "https://cripto-space-front.vercel.app/"
+        },
+        {
+            "title": "Form Page - TailwindCSS",
+            "description": "A page with menu and form responsive using TailwindCSS.",
+            "images": ["/assets/imgs/form_tailw1.webp","/assets/imgs/form_tailw2.webp"],
+            "developed": ["tailwindcss", "nextjs", "frame-motion", "responsive"],
+            "readme": "https://github.com/Drlazinho/tailwind-next",
+            "app": ""
+        },
+        {
+            "title": "Find Your Pet - API",
+            "description": "Find Your Pet is a web application that allows users to register themselves and their adopted pets.",
+            "images": ["/assets/imgs/api.png"],
+            "developed": ["Python", "flask", "sqlite"],
+            "readme": "https://github.com/Drlazinho/find-a-pet-python",
+            "app": ""
         }
     ]
 }
